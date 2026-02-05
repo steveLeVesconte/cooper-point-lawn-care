@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Cooper Point Lawn Care | Quiet, Reliable Lawn Care in Cooper Point and nearby neighborhoods</title>
+  <meta name="description"
+    content="Cooper Point Lawn Care provides quiet, dependable lawn mowing in Cooper Point and nearby neighborhoods. Call or text 614-804-3512 for availability and pricing." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- SEO hygiene -->
+  <link rel="canonical" href="https://cooperpointlawncare.com/" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Optional: social sharing -->
+  <meta property="og:title" content="Cooper Point Lawn Care | Lawn Care in Cooper Point and nearby neighborhoods" />
+  <meta property="og:description" content="Quiet, dependable mowing from a local neighbor. Call/text 614-804-3512." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cooperpointlawncare.com/" />
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16.png" sizes="16x16">
+
+  <!-- LocalBusiness schema (no exact address; uses service area) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cooper Point Lawn Care",
+    "description": "Quiet, dependable lawn care in Cooper Point and nearby neighborhoods.",
+    "telephone": "+1-614-804-3512",
+    "areaServed": "Cooper Point and nearby neighborhoods",
+    "url": "https://cooperpointlawncare.com/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f1a2e;
+      --text: #e8eefc;
+      --muted: #b8c5e6;
+      --accent: #71b7ff;
+      --accent2: #67e8a5;
+      --line: rgba(255, 255, 255, .12);
+      --shadow: 0 14px 34px rgba(0, 0, 0, .34);
+      --radius: 18px;
+      --max: 980px;
+
+      /* spacing scale */
+      --s1: 8px;
+      --s2: 12px;
+      --s3: 16px;
+      --s4: 20px;
+      --s5: 26px;
+      --s6: 32px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 15% 0%, rgba(113, 183, 255, .18), transparent 60%),
+        radial-gradient(900px 600px at 90% 10%, rgba(103, 232, 165, .14), transparent 60%),
+        var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: .08em;
+      text-underline-offset: .18em;
+    }
+
+    a:hover {
+      text-decoration-thickness: .14em;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        padding: 18px;
+      }
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0 18px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .brand .name {
+      font-weight: 850;
+      letter-spacing: .2px;
+      font-size: 18px;
+    }
+
+    .brand .tag {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .pillrow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .05);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .dot.blue {
+      background: var(--accent);
+    }
+
+    .dot.green {
+      background: var(--accent2);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .pillrow {
+        justify-content: flex-start;
+      }
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .05);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-main {
+      padding: 26px 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 3.4vw, 40px);
+      line-height: 1.12;
+      letter-spacing: -.4px;
+    }
+
+    .lead {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 62ch;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .06);
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(90deg, rgba(113, 183, 255, .22), rgba(103, 232, 165, .16));
+      border-color: rgba(113, 183, 255, .30);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 255, 255, .22);
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid rgba(113, 183, 255, .65);
+      outline-offset: 2px;
+    }
+
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .fine {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .fine strong {
+      color: var(--text);
+    }
+
+    .hero-side {
+      padding: 18px;
+    }
+
+    .side-title {
+      font-weight: 800;
+      margin: 4px 0 10px;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 10px;
+      align-items: start;
+      font-size: 14px;
+    }
+
+    .kv div {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kv div:nth-child(odd) {
+      color: var(--muted);
+    }
+
+    .kv div:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 10px;
+      padding: 8px 10px;
+      border: 1px dashed rgba(255, 255, 255, .20);
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .section {
+      margin-top: 18px;
+      padding: 22px 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -.2px;
+    }
+
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 860px) {
+      .cols {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding: 0 0 0 18px;
+    }
+
+    li {
+      margin: 6px 0;
+      color: var(--muted);
+    }
+
+    /* Photos: fix cropping + wonky borders */
+    .grid3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 860px) {
+      .grid3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .photo-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .03);
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .20);
+    }
+
+    /* Use a consistent ratio on desktop; relax to a bit taller on narrow screens */
+    .photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      transform: translateZ(0);
+      /* helps some GPUs render cleaner edges */
+    }
+
+    @media (max-width: 860px) {
+      .photo {
+        aspect-ratio: 16 / 10;
+      }
+    }
+
+    .photo-cap {
+      padding: 10px 12px 12px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(255, 255, 255, .02);
+    }
+
+    .photo.portrait {
+      object-position: 50% 30%;
+    }
+
+
+    .footer {
+      margin-top: 18px;
+      padding: 16px 0 6px;
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+    }
+
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(15, 26, 46, 0.92);
+      /* was rgba(255,255,255,.05) */
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* Pills were also slightly "glassy" and can look like a haze on some GPUs */
+    .pill {
+      background: rgba(15, 26, 46, 0.70);
+      backdrop-filter: none;
+      /* optional, but often fixes weird haze artifacts */
+    }
+
+    /* Footer had no background, so the bright gradient shows through most obviously */
+    .footer {
+      background: rgba(11, 18, 32, 0.75);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="name">Cooper Point Lawn Care</div>
+        <div class="tag">Local lawn care • Cooper Point and nearby neighborhoods</div>
+      </div>
+      <div class="pillrow" aria-label="Service highlights">
+        <div class="pill"><span class="dot green"></span>Quiet electric equipment</div>
+        <div class="pill"><span class="dot blue"></span>Dependable & neighborly</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Intro">
+        <div class="card hero-main">
+          <h1>Quiet, dependable lawn care—done right.</h1>
+          <p class="lead">
+            Hi, I’m <strong>Steve LeVesconte</strong>. I provide straightforward mowing for neighbors in <strong>Cooper
+              Point and nearby neighborhoods</strong>.
+            Clear communication, consistent results, and a clean finish.
+          </p>
+
+          <div class="cta-row" aria-label="Contact options">
+            <a class="btn primary" href="tel:6148043512" aria-label="Call or text 614-804-3512">
+              Call / Text: <span class="mono">614-804-3512</span>
+            </a>
+            <a class="btn" href="mailto:stevelevesconte@gmail.com" aria-label="Email stevelevesconte@gmail.com">
+              Email: <span class="mono">stevelevesconte@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="fine">
+            <strong>Pricing:</strong> simple and fair. Most lawns fall in a clear range after the first visit.
+            <br />No pressure—just tell me your address and what you want done.
+          </div>
+        </div>
+
+        <aside class="card hero-side" aria-label="At a glance">
+          <div class="side-title">At a glance</div>
+          <div class="kv">
+            <div>Service</div>
+            <div>Mow • Edge • Trim • Blow</div>
+            <div>Style</div>
+            <div>Quiet • Clean • Respectful</div>
+            <div>Area</div>
+            <div>Cooper Point and nearby neighborhoods</div>
+          </div>
+          <div class="badge">Tip: Save my number — quickest way to schedule.</div>
+        </aside>
+      </section>
+
+      <section class="card section" aria-label="Services">
+        <h2>Services</h2>
+        <div class="cols">
+          <div>
+            <ul>
+              <li>Routine mowing (weekly / bi-weekly)</li>
+              <li>Edging along driveway and sidewalks</li>
+              <li>Trimming around fences, beds, and obstacles</li>
+              <li>Blow-off for a clean finish</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Friendly, predictable communication</li>
+              <li>Arrive when scheduled (or I text you)</li>
+              <li>Quiet equipment (good for neighborhoods)</li>
+              <li>Respect for property and boundaries</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section" aria-label="Photos">
+        <h2>Photos</h2>
+        <div class="grid3">
+          <figure class="photo-card">
+            <img class="photo" src="assets/images/mower.jpg"
+              alt="Battery electric mower used for quiet neighborhood mowing" loading="lazy" decoding="async" />
+            <figcaption class="photo-cap">Quiet electric mower</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img class="photo" src="assets/images/trimmer.jpg"
+              alt="String trimmer used for edging and trimming along fences and beds" loading="lazy" decoding="async" />
+            <figcaption class="photo-cap">Trim & edge detail work</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img class="photo portrait" src="assets/images/me-and-sky.jpg"
+              alt="Steve LeVesconte from Cooper Point Lawn Care on site" loading="lazy" decoding="async" />
+            <figcaption class="photo-cap">Your local neighbor (Steve)</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+      <div>© <span id="y"></span> Cooper Point Lawn Care • Steve LeVesconte</div>
+      <div>
+        <a href="tel:6148043512" aria-label="Call or text 614-804-3512">614-804-3512</a> •
+        <a href="mailto:stevelevesconte@gmail.com"
+          aria-label="Email stevelevesconte@gmail.com">stevelevesconte@gmail.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Tiny enhancement: current year in footer
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
